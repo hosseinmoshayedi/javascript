@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/logo.png" sizes="64x64">
+    <title>Login</title>
+</head>
+
+<body>
+    <div id="container">
+        <div class="item div-active" onclick="funSignup()">
+            <div class="inner-header">
+                <p>ثبت نام</p>
+            </div>
+            <div class="inner-footer active">
+                <form action="">
+                    <input type="email" name="email" placeholder="ایمیل">
+                    <input type="password" name="password" placeholder="رمز عبور">
+                    <input type="password" name="password" placeholder="تکرار رمز عبور">
+                    <input type="submit" name="submit" id="btn-sub" value="ثبت نام">
+                </form>
+            </div>
+        </div>
+        <div class="item" onclick="funLogin()">
+            <div class="inner-header bg b-rad ">
+                <p>ورود</p>
+            </div>
+            <div id="con-bottom">
+                <div class="inner-footer fade">
+                    <form action="">
+                        <input type="email" name="email" placeholder="ایمیل">
+                        <input type="password" name="password" placeholder="رمز عبور">
+                        <input type="submit" name="submit" id="btn-log" value="ورود">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
