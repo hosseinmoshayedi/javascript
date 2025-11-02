@@ -1,0 +1,299 @@
+/* header */
+#header-info {
+    margin: 0 auto;
+}
+
+#contact>div {
+    display: flex;
+    align-items: center;
+}
+
+header p {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+header svg {
+    margin: 0 0.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* main */
+#nav-container {
+    position: sticky;
+    top: 0;
+    width: 75%;
+    margin: 0 auto;
+    border-radius: 5rem;
+    background-color: orange;
+    z-index: 1;
+    box-sizing: border-box;
+}
+
+nav {
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    font-size: 1.5rem;
+}
+
+nav a{
+    color: #fff;
+}
+
+nav ul {
+    justify-content: space-around;
+    color: #fff;
+    flex: 1;
+}
+
+nav li {
+    padding: 0.5rem;
+}
+
+nav a:hover {
+    color: #000;
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+}
+
+nav button {
+    border: 0;
+    background-color: transparent;
+}
+
+nav button:hover {
+    cursor: pointer;
+}
+
+#main-container {
+    margin-top: -45px;
+    background-image: url("../images/Banner1.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    z-index: 0;
+    color: #fff;
+    text-align: center;
+}
+
+#overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 1rem 0;
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+#main-container p {
+    font-size: 1.5rem;
+}
+
+#main-container button {
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    background-color: gold;
+    border: 0;
+    color: #fff;
+}
+
+#main-container button:hover {
+    background-color: yellowgreen;
+    color: #000;
+    cursor: pointer;
+}
+
+#description {
+    padding: 1rem;
+}
+
+/* footer */
+footer div{
+    text-align: center;
+}
+
+/* responsive */
+@media screen and (max-width: 576px) {
+    #header-info {
+        text-align: center;
+        font-size: 1.25rem;
+    }
+
+    #contact>div {
+        width: fit-content;
+        margin: 0 auto 1rem;
+    }
+
+    header ul {
+        width: fit-content;
+        margin: 1rem auto;
+    }
+
+    #nav-container {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    nav {
+        padding: 0;
+    }
+
+    nav ul {
+        font-size: 1rem;
+    }
+
+    nav svg {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    #header-info {
+        text-align: center;
+        font-size: 1.25rem;
+    }
+
+    #contact>div {
+        width: fit-content;
+        margin: 0 auto 1rem;
+    }
+
+    header ul {
+        width: fit-content;
+        margin: 1rem auto;
+    }
+
+    #nav-container {
+        width: 80%;
+        border-radius: 5rem;
+        padding: 1rem;
+    }
+
+    nav {
+        padding: 0;
+    }
+
+    nav ul {
+        font-size: 1.5rem;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    nav svg {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #header-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1rem;
+        font-size: 1rem;
+    }
+
+    #contact {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        flex: 1;
+    }
+
+    nav ul {
+        width: 75%;
+        flex: none;
+    }
+
+    nav svg {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #header-info {
+        width: 90%;
+        font-size: 1.2rem;
+        padding: 0;
+    }
+
+    #contact {
+        justify-content: space-around;
+    }
+
+    nav ul {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    #header-info {
+        width: 75%;
+    }
+
+    #contact {
+        justify-content: flex-end;
+        flex: none;
+    }
+
+    #contact>div {
+        margin: 0 1rem;
+    }
+}
+
+/* global */
+body {
+    margin: 0;
+}
+
+* {
+    transition: all 250ms linear;
+}
+
+.display-none {
+    display: none;
+}
+
+.active a {
+    color: #000;
+    text-decoration: underline solid #000;
+}
+
+.scrolled {
+    width: 100% !important;
+    border-radius: 0 !important;
+}
